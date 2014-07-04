@@ -1,0 +1,19 @@
+.maingallery {
+   background-color: #fff;
+   overflow: hidden;
+   z-index: 9999;
+   display:none;
+   -webkit-box-shadow: 0 0 30px rgba(0,0,0,0.7);
+   -moz-box-shadow: 0 0 30px rgba(0,0,0,0.7);
+   box-shadow: 0 0 10px rgba(0,0,0,0.7);
+   filter: progid:DXImageTransform.Microsoft.shadow(direction=0, color=#000000, strength=10);
+}
+.maingallery img {
+    padding: 5px;
+}
+.maingallery figcaption {
+    margin: 0 auto 5px;
+    text-align: center;
+    font: bold 0.8em Tahoma, Geneva, sans-serif;
+    color: #65747E;
+}
