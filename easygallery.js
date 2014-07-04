@@ -1,7 +1,7 @@
 (function($) {
 	$(document).ready(function(){
-        $(document).bind('click', function(event){
-            var bigImg = $('<img src="#" />').addClass('bigimg'); // make element - big image
+		$(document).bind('click', function(event) {
+        	var bigImg = $('<img src="#" />').addClass('bigimg'); // make element - big image
             var mainGallery = $('<div>').addClass('maingallery'); // make gallery wrapper
             var caption = $('<figcaption>'); // make a image caption
             mainGallery.append(bigImg);
@@ -14,13 +14,13 @@
             bigImg.attr('src', newUrl); // set url of big image
             mainGallery.css({'width': mainGalleryWidth+'px', 'height': mainGalleryHeight+'px'}); // add size to gallery wrapper
             mainGallery.makeCenter(); // make our gallery centered
-            if(!$('.maingallery').length && $(target).hasClass('galleryimg') ) { //append or remove big image
-                    $('body').append(mainGallery);
-                    $('.maingallery figcaption').text(captionText);
-                    $('.maingallery').fadeIn(600);
-                } else{
-                    $('.maingallery').fadeOut(600);
-                    setTimeout('$(".maingallery").remove()', 600);
+            if(!$('.maingallery').length && $(target).hasClass('galleryimg')) { //append or remove big image
+            	$('body').append(mainGallery);
+                $('.maingallery figcaption').text(captionText);
+                $('.maingallery').fadeIn(600);
+            } else{
+                $('.maingallery').fadeOut(600);
+                setTimeout('$(".maingallery").remove()', 600);
             };
         });
         $.fn.makeCenter = function() { // centered big image , if height or width are negative - top and left = 20px
