@@ -1,7 +1,7 @@
 (function($) {
 	$(document).ready(function(){
-		$(document).bind('click', function(event) {
-        	var bigImg = $('<img src="#" />').addClass('bigimg'); // make element - big image
+        $(document).bind('click', function(event) {
+            var bigImg = $('<img src="#" />').addClass('bigimg'); // make element - big image
             var mainGallery = $('<div>').addClass('maingallery'); // make gallery wrapper
             var caption = $('<figcaption>'); // make a image caption
             mainGallery.append(bigImg);
