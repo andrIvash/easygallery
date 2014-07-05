@@ -20,7 +20,10 @@
         $('.maingallery').fadeIn(600);
       } else{
         $('.maingallery').fadeOut(600);
-        setTimeout('$(".maingallery").remove()', 600);
+        function removeImg() {
+            $(".maingallery").remove();
+        };
+        setTimeout(removeImg, 600);
       };
     });
     $.fn.makeCenter = function() { // centered big image , if height or width are negative - top and left = 20px
