@@ -8,7 +8,6 @@
           var caption = $('<figcaption>'); // make a image caption
           mainGallery.append(bigImg);
           mainGallery.append(caption);
-          var target = event.target||event.srcElement; // check the onclick target
           var newUrl = $(target).data('fileUrl'); // receive url of big image
           var captionText = $(target).attr('title'); // set image caption
           var mainGalleryWidth = $(target).data('fileWidth')+10; // set width of the big image
